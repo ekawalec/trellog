@@ -46,6 +46,7 @@ class App extends Application
     {
         $commands = parent::getDefaultCommands();
         $commands[] = new Commands\Init();
+        $commands[] = new Commands\Reinit();
         $commands[] = new Commands\Generate();
         
         return $commands;
